@@ -1,0 +1,22 @@
+.main {
+    border-bottom: solid skyblue 1px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+
+.link {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: color 0.1s;
+}
+
+.link:active {
+    color: orange;
+}
+
+@media screen and (max-width:350px) {}
