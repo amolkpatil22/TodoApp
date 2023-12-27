@@ -1,15 +1,15 @@
 .main {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .heading {
-    color: teal;
+    color: black;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    border: solid skyblue 1px;
+    border: solid rgb(228, 27, 27) 1px;
     max-width: 500px;
     text-align: left;
     margin: auto;
@@ -30,15 +30,15 @@
 
 .submit_btn {
     margin: auto;
-    background-color: orange;
-    margin-top: 10px;
+    background-color: rgb(228, 27, 27);
+    margin-top: 30px;
     width: 50%;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    
+
     color: white;
-    font-size: large;      
+    font-size: large;
     transition: background-color 0.3s;
 }
 
@@ -47,7 +47,7 @@
 }
 
 @media screen and (max-width:250px) {
-    .submit_btn{
-       width: 100%;
+    .submit_btn {
+        width: 100%;
     }
 }

@@ -1,6 +1,6 @@
 .main {
-    border-bottom: solid skyblue 1px;
-    padding: 10px;
+    border-bottom: solid orangered 1px;
+    padding: 20px;   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .link {
-    color: purple;
+    color:black;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -16,7 +16,7 @@
 }
 
 .link:active {
-    color: orange;
+    color: orangered;
 }
 
 @media screen and (max-width:350px) {}
