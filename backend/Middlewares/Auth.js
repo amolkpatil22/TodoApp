@@ -2,7 +2,7 @@ const express = require("express")
 const jwt = require("jsonwebtoken")
 
 const Auth = async (req, res, next) => {
-    let token = req.headers?.authentication.split(" ")[1]
+    let token = req.headers?.authorization?.split(" ")[1]
     try {
         jwt.verify(token, "amol", (err, decoded) => {
             if (err) {

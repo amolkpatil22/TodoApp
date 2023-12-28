@@ -30,7 +30,8 @@ todoRoute.post("/add", async (req, res) => {
 todoRoute.patch("/update/:id", async (req, res) => {
     try {
         let { id } = req.params
-        let data = await todoModel.findOneAndUpdate({ _id: id, userID: req.body.userID }, req.body)
+        let data = await todoModel.findOneAndUpdate({ _id: id, userID: req.body.userID }, req.body ,{new:true})
+
         if (data) {
             res.status(200).send({ "msg": "Task updated successfully", "status": "success", "todo": data })
         }
@@ -44,7 +45,7 @@ todoRoute.patch("/update/:id", async (req, res) => {
 })
 
 
-todoRoute.delete("/update/:id", async (req, res) => {
+todoRoute.delete("/delete/:id", async (req, res) => {
     try {
         let { id } = req.params
         let data = await todoModel.findOneAndDelete({ _id: id, userID: req.body.userID }, req.body)
